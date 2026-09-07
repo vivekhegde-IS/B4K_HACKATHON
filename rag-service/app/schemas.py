@@ -12,6 +12,7 @@ class SourceMetadata(BaseModel):
     source: str
     page: int
     category: str | None = None
+    policy_scope: Literal["standard", "hyperlocal"] | None = None
     document_type: str | None = None
 
 

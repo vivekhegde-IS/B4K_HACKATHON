@@ -45,6 +45,25 @@ def test_chunking_preserves_metadata():
     assert len(chunks) > 13
     assert all(chunk.text for chunk in chunks)
     assert all({"source", "page", "document_type"} <= chunk.metadata.keys() for chunk in chunks)
+    assert all(chunk.metadata["policy_scope"] in {"standard", "hyperlocal"} for chunk in chunks)
+
+
+def test_books_chunks_preserve_scope_and_category():
+    chunks = chunk_pages(load_pdf(PDF_PATH))
+    standard_books = [
+        chunk for chunk in chunks
+        if chunk.metadata["page"] == 3 and "Books (All books)" in chunk.text
+    ]
+    hyperlocal_books = [
+        chunk for chunk in chunks
+        if chunk.metadata["page"] == 11 and "Books (All books)" in chunk.text
+    ]
+    assert standard_books
+    assert hyperlocal_books
+    assert standard_books[0].metadata["category"] == "Books"
+    assert standard_books[0].metadata["policy_scope"] == "standard"
+    assert hyperlocal_books[0].metadata["category"] == "Books"
+    assert hyperlocal_books[0].metadata["policy_scope"] == "hyperlocal"
 
 
 def test_retrieval_preserves_policy_source(indexed_store):
