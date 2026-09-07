@@ -1,0 +1,1 @@
+export default function Exchanges() { return <section>Exchanges</section> }

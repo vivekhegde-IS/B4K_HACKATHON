@@ -1,0 +1,1 @@
+"""Inventory schema reserved for future implementation."""

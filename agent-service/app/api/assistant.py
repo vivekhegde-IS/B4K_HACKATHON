@@ -1,0 +1,1 @@
+"""Assistant endpoints reserved for future implementation."""

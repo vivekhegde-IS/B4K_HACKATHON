@@ -1,0 +1,1 @@
+"""Error definitions reserved for future implementation."""

@@ -1,0 +1,1 @@
+"""RAG client reserved for future implementation."""

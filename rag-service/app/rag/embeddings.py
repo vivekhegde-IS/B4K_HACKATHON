@@ -1,0 +1,1 @@
+"""Embedding configuration reserved for future implementation."""

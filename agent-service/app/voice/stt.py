@@ -1,0 +1,1 @@
+"""Speech-to-text integration reserved for future implementation."""
