@@ -1,0 +1,217 @@
+{
+  "policy_version": "source-policy-v1",
+  "source": "order_cancellation_return_policy.pdf",
+
+  "general_rules": {
+    "product_page_prevails": true,
+    "missing_required_information": "AMBIGUOUS",
+    "failed_condition": "INELIGIBLE",
+    "all_conditions_pass": "ELIGIBLE",
+    "pickup_validation_required": true,
+    "one_time_replacement": true
+  },
+
+  "product_rules": {
+    "standard": [],
+    "hyperlocal": []
+  },
+
+  "standard": {
+    "categories": [
+      {
+        "name": "Furniture and selected Home/Pet Supplies",
+        "window_days": 10,
+        "actions": ["REFUND", "REPLACEMENT"],
+        "installation_authorized_required": true
+      },
+      {
+        "name": "Lifestyle",
+        "window_days": 10,
+        "actions": ["REFUND", "REPLACEMENT", "EXCHANGE"]
+      },
+      {
+        "name": "Medicine - Allopathy and Homeopathy",
+        "window_days": 2,
+        "actions": ["REFUND"]
+      },
+      {
+        "name": "Home Improvement Tools, Household Items, Home Decor, Furnishing",
+        "window_days": 7,
+        "actions": ["REFUND", "REPLACEMENT"]
+      },
+      {
+        "name": "Books",
+        "window_days": 7,
+        "actions": ["REPLACEMENT"]
+      },
+      {
+        "name": "Sports, Exercise/Fitness and Auto Accessories",
+        "window_days": 7,
+        "actions": ["REPLACEMENT"],
+        "condition": "DEFECTIVE_DAMAGED_OR_DIFFERENT_ITEM",
+        "original_accessories_required": true,
+        "manual_and_warranty_required": true,
+        "original_packaging_required": true
+      },
+      {
+        "name": "Toys, Stationery and Musical Instruments",
+        "window_days": 7,
+        "actions": ["REPLACEMENT"],
+        "condition": "DEFECTIVE_DAMAGED_OR_DIFFERENT_ITEM",
+        "original_accessories_required": true,
+        "manual_and_warranty_required": true,
+        "original_packaging_required": true
+      },
+      {
+        "name": "Selected Mobiles, Electronics and Small Home Appliances",
+        "category_aliases": ["electronics", "mobile", "small home appliances"],
+        "window_days": 7,
+        "actions": ["REPLACEMENT"],
+        "required_conditions": ["product_identifier", "accessories_complete", "product_unused", "product_undamaged", "packaging_undamaged"]
+      },
+      {
+        "name": "Selected Mobiles, Electronics and Large Appliances - Service Center",
+        "window_days": 7,
+        "actions": ["REPLACEMENT", "REPAIR"],
+        "service_center_required": true
+      },
+      {
+        "name": "Large Appliances and selected Small Home Appliances",
+        "window_days": 10,
+        "actions": ["REPLACEMENT"],
+        "installation_authorized_required": true,
+        "one_time_replacement": true
+      },
+      {
+        "name": "Grocery - Dairy, Bakery, Fruits and Vegetables",
+        "window_days": 2,
+        "actions": ["REFUND"]
+      },
+      {
+        "name": "Grocery - Remaining Items",
+        "window_days": 7,
+        "actions": ["REFUND"]
+      },
+      {
+        "name": "No Questions Asked",
+        "window_days": 10,
+        "actions": ["REFUND", "REPLACEMENT"]
+      }
+    ]
+  },
+
+  "hyperlocal": {
+    "categories": [
+      {
+        "name": "Fresh Fruit, Vegetable, Milk",
+        "window_days": 1,
+        "actions": ["REFUND"]
+      },
+      {
+        "name": "Non-prescription Medicines",
+        "window_days": 1,
+        "actions": ["REFUND"]
+      },
+      {
+        "name": "Fresh Egg, Fish/Seafood and Meat",
+        "window_days": 2,
+        "actions": ["REFUND"]
+      },
+      {
+        "name": "Fresh Bread, Cheese, Butter",
+        "window_days": 3,
+        "actions": ["REFUND"]
+      },
+      {
+        "name": "Grocery - Food and Nutrition",
+        "window_days": 3,
+        "actions": ["REFUND"]
+      },
+      {
+        "name": "Grocery - Personal Care",
+        "window_days": 3,
+        "actions": ["REFUND"]
+      },
+      {
+        "name": "Grocery - Other",
+        "window_days": 3,
+        "actions": ["REFUND"]
+      },
+      {
+        "name": "Books, Sports Equipment, Toys, Stationery and Home Utensils",
+        "window_days": 7,
+        "actions": ["REFUND"],
+        "original_accessories_required": true,
+        "manual_and_warranty_required": true,
+        "original_packaging_required": true
+      },
+      {
+        "name": "Selected Mobiles, Electronics and Small Home Appliances",
+        "category_aliases": ["electronics", "mobile", "small home appliances"],
+        "window_days": 7,
+        "actions": ["REFUND"],
+        "required_conditions": ["product_identifier", "accessories_complete", "product_unused", "product_undamaged", "packaging_undamaged"]
+      },
+      {
+        "name": "Selected Brand Mobiles, Electronics and Large Appliances",
+        "window_days": 7,
+        "actions": ["REPLACEMENT", "REPAIR"],
+        "service_center_required": true
+      },
+      {
+        "name": "Home - Bedsheet, Pet Food, Furnishings, Home Decor",
+        "window_days": 7,
+        "actions": ["REFUND"],
+        "installation_authorized_required": true
+      },
+      {
+        "name": "Lifestyle",
+        "window_days": 10,
+        "actions": ["REFUND"]
+      },
+      {
+        "name": "Prescription Medicines",
+        "window_days": 3,
+        "actions": ["REFUND"],
+        "damaged_wrong_expired_only": true
+      }
+    ],
+
+    "no_return_categories": [
+      "Diaper",
+      "Bottle nipple",
+      "Female urination device",
+      "Women intimate care",
+      "Teether",
+      "Soother",
+      "Nipple puller",
+      "Sanitary pad",
+      "Pantyliner",
+      "Condom",
+      "Toothbrush",
+      "Tampon",
+      "Dental floss stick",
+      "Toilet brush",
+      "Cleaning glove",
+      "Boxer",
+      "Trunk",
+      "Sock",
+      "Panty"
+    ],
+
+    "damaged_or_wrong_delivery_case_window_days": 5
+  },
+
+  "pickup_conditions": {
+    "correct_product": true,
+    "mrp_tag_visible_and_undetached": true,
+    "all_accessories_present": true,
+    "freebies_and_combos_present": true,
+    "product_unused": true,
+    "product_undamaged": true,
+    "packaging_undamaged": true,
+    "device_formatted": true,
+    "screen_lock_disabled": true,
+    "icloud_lock_disabled_for_apple": true
+  }
+}
