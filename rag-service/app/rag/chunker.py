@@ -1,1 +1,5 @@
-"""Document chunking reserved for future implementation."""
+"""Backward-compatible chunker module."""
+
+from .chunking import PolicyChunk, chunk_pages
+
+__all__ = ["PolicyChunk", "chunk_pages"]
