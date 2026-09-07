@@ -1,0 +1,1 @@
+"""Prompt definitions reserved for future implementation."""

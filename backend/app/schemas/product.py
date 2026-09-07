@@ -1,0 +1,1 @@
+"""Product schema reserved for future implementation."""

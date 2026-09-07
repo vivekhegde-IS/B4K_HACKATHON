@@ -1,0 +1,1 @@
+"""Return service reserved for future implementation."""

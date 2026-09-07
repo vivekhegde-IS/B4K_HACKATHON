@@ -1,0 +1,1 @@
+"""Customer schema reserved for future implementation."""

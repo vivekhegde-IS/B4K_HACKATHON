@@ -1,0 +1,1 @@
+"""Return ticket schema reserved for future implementation."""

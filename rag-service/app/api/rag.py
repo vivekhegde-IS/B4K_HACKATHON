@@ -1,0 +1,1 @@
+"""RAG endpoints reserved for future implementation."""

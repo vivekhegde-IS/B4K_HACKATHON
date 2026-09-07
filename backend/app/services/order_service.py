@@ -1,0 +1,1 @@
+"""Order service reserved for future implementation."""

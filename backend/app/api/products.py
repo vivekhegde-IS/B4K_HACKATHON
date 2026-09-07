@@ -1,0 +1,1 @@
+"""Product API reserved for future implementation."""

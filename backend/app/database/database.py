@@ -1,0 +1,1 @@
+"""Database configuration reserved for future implementation."""

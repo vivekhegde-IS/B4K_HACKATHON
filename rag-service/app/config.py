@@ -1,0 +1,1 @@
+"""RAG configuration reserved for future implementation."""

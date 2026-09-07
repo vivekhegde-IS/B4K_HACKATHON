@@ -1,0 +1,1 @@
+"""Voice endpoints reserved for future implementation."""

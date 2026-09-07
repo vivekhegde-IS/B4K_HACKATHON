@@ -1,0 +1,1 @@
+"""Product service reserved for future implementation."""
